@@ -1,0 +1,10 @@
+Razones para usar Feature Store:
+Reusabilidad y Feature sharing entre modelos y proyectos.
+Consistencia entre datos de entrenamiento y datos productivos.
+Acelera paso a producción modelo de ML.
+Fomenta colaboración.
+Reduce esfuerzos de equipos de ingenieria de datos.
+Mejor gobierno y centralización de la información, evitando duplicidad.
+
+127598 Ebus.
+

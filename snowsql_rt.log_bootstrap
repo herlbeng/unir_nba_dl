@@ -1,0 +1,120 @@
+2024-01-03 02:48:47,008 (37700/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:48:47,008 (37700/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI355922\base_library.zip\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI355922\base_library.zip\certifi\cacert.pem
+2024-01-03 02:48:47,008 (37700/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI355922\lib-dynload\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI355922\lib-dynload\certifi\cacert.pem
+2024-01-03 02:48:47,008 (37700/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI355922\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI355922\certifi\cacert.pem
+2024-01-03 02:48:47,008 (37700/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\Z408284\AppData\Local\Temp\_MEI355922\certifi\cacert.pem
+2024-01-03 02:48:47,008 (37700/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2024-01-03 02:48:47,008 (37700/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2024-01-03 02:48:47,008 (37700/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2024-01-03 02:48:47,008 (37700/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2024-01-03 02:48:47,008 (37700/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2024-01-03 02:48:47,008 (37700/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2024-01-03 02:48:47,008 (37700/MainThread) __main__ DEBUG      bootstrap:828  - Running C:\Users\Z408284\.snowsql\1.2.23\snowsql.exe
+2024-01-03 02:49:12,999 (21056/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:49:12,999 (21056/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI268802\base_library.zip\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI268802\base_library.zip\certifi\cacert.pem
+2024-01-03 02:49:12,999 (21056/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI268802\lib-dynload\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI268802\lib-dynload\certifi\cacert.pem
+2024-01-03 02:49:12,999 (21056/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI268802\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI268802\certifi\cacert.pem
+2024-01-03 02:49:12,999 (21056/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\Z408284\AppData\Local\Temp\_MEI268802\certifi\cacert.pem
+2024-01-03 02:49:12,999 (21056/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2024-01-03 02:49:12,999 (21056/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2024-01-03 02:49:12,999 (21056/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2024-01-03 02:49:12,999 (21056/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2024-01-03 02:49:12,999 (21056/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2024-01-03 02:49:12,999 (21056/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2024-01-03 02:49:12,999 (21056/MainThread) __main__ DEBUG      bootstrap:828  - Running C:\Users\Z408284\.snowsql\1.2.23\snowsql.exe
+2024-01-03 02:49:39,980 (2532/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:49:39,980 (2532/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI362122\base_library.zip\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI362122\base_library.zip\certifi\cacert.pem
+2024-01-03 02:49:39,980 (2532/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI362122\lib-dynload\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI362122\lib-dynload\certifi\cacert.pem
+2024-01-03 02:49:39,980 (2532/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI362122\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI362122\certifi\cacert.pem
+2024-01-03 02:49:39,980 (2532/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\Z408284\AppData\Local\Temp\_MEI362122\certifi\cacert.pem
+2024-01-03 02:49:39,980 (2532/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2024-01-03 02:49:39,980 (2532/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2024-01-03 02:49:39,980 (2532/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2024-01-03 02:49:39,980 (2532/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2024-01-03 02:49:39,980 (2532/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2024-01-03 02:49:39,980 (2532/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2024-01-03 02:49:39,980 (2532/MainThread) __main__ DEBUG      bootstrap:828  - Running C:\Users\Z408284\.snowsql\1.2.23\snowsql.exe
+2024-01-03 02:50:10,297 (824/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:50:10,297 (824/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI97442\base_library.zip\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI97442\base_library.zip\certifi\cacert.pem
+2024-01-03 02:50:10,297 (824/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI97442\lib-dynload\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI97442\lib-dynload\certifi\cacert.pem
+2024-01-03 02:50:10,297 (824/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI97442\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI97442\certifi\cacert.pem
+2024-01-03 02:50:10,297 (824/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\Z408284\AppData\Local\Temp\_MEI97442\certifi\cacert.pem
+2024-01-03 02:50:10,297 (824/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2024-01-03 02:50:10,297 (824/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2024-01-03 02:50:10,297 (824/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2024-01-03 02:50:10,297 (824/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2024-01-03 02:50:10,297 (824/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2024-01-03 02:50:10,297 (824/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2024-01-03 02:50:10,297 (824/MainThread) __main__ DEBUG      bootstrap:828  - Running C:\Users\Z408284\.snowsql\1.2.23\snowsql.exe
+2024-01-03 02:50:45,271 (35540/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:50:45,271 (35540/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI326802\base_library.zip\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI326802\base_library.zip\certifi\cacert.pem
+2024-01-03 02:50:45,271 (35540/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI326802\lib-dynload\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI326802\lib-dynload\certifi\cacert.pem
+2024-01-03 02:50:45,271 (35540/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI326802\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI326802\certifi\cacert.pem
+2024-01-03 02:50:45,271 (35540/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\Z408284\AppData\Local\Temp\_MEI326802\certifi\cacert.pem
+2024-01-03 02:50:45,271 (35540/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2024-01-03 02:50:45,271 (35540/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2024-01-03 02:50:45,271 (35540/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2024-01-03 02:50:45,271 (35540/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2024-01-03 02:50:45,271 (35540/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2024-01-03 02:50:45,271 (35540/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2024-01-03 02:50:45,271 (35540/MainThread) __main__ DEBUG      bootstrap:828  - Running C:\Users\Z408284\.snowsql\1.2.23\snowsql.exe
+2024-01-03 02:53:35,777 (27392/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:53:35,777 (27392/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI100442\base_library.zip\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI100442\base_library.zip\certifi\cacert.pem
+2024-01-03 02:53:35,777 (27392/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI100442\lib-dynload\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI100442\lib-dynload\certifi\cacert.pem
+2024-01-03 02:53:35,777 (27392/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI100442\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI100442\certifi\cacert.pem
+2024-01-03 02:53:35,777 (27392/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\Z408284\AppData\Local\Temp\_MEI100442\certifi\cacert.pem
+2024-01-03 02:53:35,777 (27392/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2024-01-03 02:53:35,777 (27392/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2024-01-03 02:53:35,777 (27392/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2024-01-03 02:53:35,777 (27392/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2024-01-03 02:53:35,777 (27392/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: True
+2024-01-03 02:53:35,777 (27392/MainThread) __main__ INFO      bootstrap:370  - auto upgrade without version
+2024-01-03 02:53:35,777 (27392/MainThread) __main__ DEBUG      bootstrap:906  - Checking Repository: https://sfc-repo.snowflakecomputing.com/snowsql/1.2/windows_x86_64/index.json
+2024-01-03 02:53:36,193 (27392/MainThread) __main__ DEBUG      bootstrap:916  - Failed to list the available snowsql files in remote: https://sfc-repo.snowflakecomputing.com/snowsql/1.2/windows_x86_64/index.json, HTTPSConnectionPool(host='sfc-repo.snowflakecomputing.com', port=443): Max retries exceeded with url: /snowsql/1.2/windows_x86_64/index.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)')))
+Traceback (most recent call last):
+  File "urllib3\connectionpool.py", line 597, in urlopen
+  File "urllib3\connectionpool.py", line 343, in _make_request
+  File "urllib3\connectionpool.py", line 839, in _validate_conn
+  File "urllib3\connection.py", line 337, in connect
+  File "urllib3\util\ssl_.py", line 345, in ssl_wrap_socket
+  File "ssl.py", line 500, in wrap_socket
+  File "ssl.py", line 1040, in _create
+  File "ssl.py", line 1309, in do_handshake
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "requests\adapters.py", line 489, in send
+  File "urllib3\connectionpool.py", line 637, in urlopen
+  File "urllib3\util\retry.py", line 399, in increment
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sfc-repo.snowflakecomputing.com', port=443): Max retries exceeded with url: /snowsql/1.2/windows_x86_64/index.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "bootstrap.py", line 908, in list_snowsql_files
+  File "requests\api.py", line 73, in get
+  File "requests\api.py", line 59, in request
+  File "requests\sessions.py", line 587, in request
+  File "requests\sessions.py", line 701, in send
+  File "requests\adapters.py", line 563, in send
+requests.exceptions.SSLError: HTTPSConnectionPool(host='sfc-repo.snowflakecomputing.com', port=443): Max retries exceeded with url: /snowsql/1.2/windows_x86_64/index.json (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1108)')))
+2024-01-03 02:53:36,208 (27392/MainThread) __main__ DEBUG      bootstrap:426  - checking C:\Program Files\Snowflake SnowSQL for the snowsql zip file.
+2024-01-03 02:53:36,208 (27392/MainThread) __main__ DEBUG      bootstrap:456  - extracting the snowsql zip file. source file: C:\Program Files\Snowflake SnowSQL\snowsql-1.2.23-windows_x86_64.zip, target dir: C:\Users\Z408284\.snowsql\1.2.23
+2024-01-03 02:53:36,240 (27392/MainThread) __main__ INFO      bootstrap:465  - Verified the signature
+2024-01-03 02:53:37,079 (27392/MainThread) __main__ DEBUG      bootstrap:623  - Latest version: 1.2.23 in remote
+2024-01-03 02:53:37,079 (27392/MainThread) __main__ INFO      bootstrap:247  - Recorded autoupgrade status
+2024-01-03 02:53:37,079 (27392/MainThread) __main__ DEBUG      bootstrap:828  - Running C:\Users\Z408284\.snowsql\1.2.23\snowsql.exe
+2024-01-03 02:55:25,952 (27504/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log_bootstrap', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:55:25,952 (27504/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI290082\base_library.zip\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI290082\base_library.zip\certifi\cacert.pem
+2024-01-03 02:55:25,952 (27504/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI290082\lib-dynload\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI290082\lib-dynload\certifi\cacert.pem
+2024-01-03 02:55:25,952 (27504/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:725  - cacert?: C:\Users\Z408284\AppData\Local\Temp\_MEI290082\cacert.pem, C:\Users\Z408284\AppData\Local\Temp\_MEI290082\certifi\cacert.pem
+2024-01-03 02:55:25,952 (27504/MainThread) snowflake.cli.common.util_cli INFO       util_cli:733  - cacert.pem is set to REQUESTS_CA_BUNDLE: C:\Users\Z408284\AppData\Local\Temp\_MEI290082\certifi\cacert.pem
+2024-01-03 02:55:25,952 (27504/MainThread) __main__ DEBUG      bootstrap:345  - proxy_host:None, proxy_port: None, proxy_user: None, proxy_password:False
+2024-01-03 02:55:25,952 (27504/MainThread) __main__ INFO      bootstrap:350  - no autoupgrade option: False
+2024-01-03 02:55:25,952 (27504/MainThread) __main__ INFO      bootstrap:352  - version: None, ret_options: None
+2024-01-03 02:55:25,952 (27504/MainThread) __main__ DEBUG      bootstrap:750  - No deletion happened. The number of snowsql is still less than 5
+2024-01-03 02:55:25,952 (27504/MainThread) __main__ DEBUG      bootstrap:365  - can we upgrade?: False
+2024-01-03 02:55:25,952 (27504/MainThread) __main__ INFO      bootstrap:373  - skipping auto upgrade
+2024-01-03 02:55:25,952 (27504/MainThread) __main__ DEBUG      bootstrap:828  - Running C:\Users\Z408284\.snowsql\1.2.23\snowsql.exe

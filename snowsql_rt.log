@@ -1,0 +1,774 @@
+2024-01-03 02:49:13,437 (28508/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:49:13,437 (28508/MainThread) snowflake.cli.common.util_cli INFO       util_cli:741  - REQUESTS_CA_BUNDLE is already set to C:\Users\Z408284\AppData\Local\Temp\_MEI268802\certifi\cacert.pem
+2024-01-03 02:49:13,437 (28508/MainThread) __main__ DEBUG      eventloop:219  - is_terminal: True, is_interactive: True
+2024-01-03 02:49:13,437 (28508/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\1.2.23\snowsql.cnf
+2024-01-03 02:49:13,437 (28508/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2024-01-03 02:49:13,437 (28508/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2024-01-03 02:49:13,437 (28508/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2024-01-03 02:49:13,437 (28508/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql.cnf
+2024-01-03 02:49:13,437 (28508/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\config
+2024-01-03 02:49:13,437 (28508/MainThread) __main__ DEBUG      eventloop:362  - [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2024-01-03 02:49:13,437 (28508/MainThread) __main__ DEBUG      eventloop:368  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2024-01-03 02:49:13,437 (28508/MainThread) __main__ DEBUG      eventloop:417  - host=None, port: + None
+2024-01-03 02:49:13,437 (28508/MainThread) __main__ DEBUG      eventloop:456  - prompting user, password and account if still missing
+2024-01-03 02:49:24,175 (28508/MainThread) __main__ DEBUG      eventloop:511  - init sqlexecute
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:244  - Connection DB Params: database: None, warehouse: None, user: X851082, host: tjb53652.us-east-1.snowflakecomputing.com, port: 443, region: None, account: tjb53652.us-east-1, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.connection INFO     connection:270  - Snowflake Connector for Python Version: 2.7.11, Python Version: 3.8.2, Platform: Windows-10-10.0.19041-SP0
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.connection DEBUG     connection:512  - connect
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.connection DEBUG     connection:802  - __config
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.connection INFO     connection:926  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.connection INFO     connection:944  - Setting use_openssl_only mode to False
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.converter DEBUG      converter:145  - use_numpy: False
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.connection DEBUG     connection:705  - REST API object was created: tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=fb8e8d49-da91-4c6e-9faa-7e0392787915
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 82f569e6-42d2-48d1-82ff-b8a2a4c4a346
+2024-01-03 02:49:24,175 (28508/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:49:24,190 (28508/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (1): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:24,575 (28508/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=fb8e8d49-da91-4c6e-9faa-7e0392787915&request_guid=82f569e6-42d2-48d1-82ff-b8a2a4c4a346'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:49:24,575 (28508/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=fb8e8d49-da91-4c6e-9faa-7e0392787915&request_guid=82f569e6-42d2-48d1-82ff-b8a2a4c4a346
+2024-01-03 02:49:24,575 (28508/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (2): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:24,776 (28508/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.us-east-1.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=fb8e8d49-da91-4c6e-9faa-7e0392787915&request_guid=82f569e6-42d2-48d1-82ff-b8a2a4c4a346 (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:49:24,791 (28508/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=fb8e8d49-da91-4c6e-9faa-7e0392787915&request_guid=82f569e6-42d2-48d1-82ff-b8a2a4c4a346, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:49:24,791 (28508/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:49:24,791 (28508/MainThread) snowflake.connector.connection DEBUG     connection:1079 - Operational Error raised at authenticationfor authenticator: AuthByDefault
+2024-01-03 02:49:24,791 (28508/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:49:24,791 (28508/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:123  - Hit connection timeout, attempt number 0. Will retry in a bit...
+2024-01-03 02:49:24,791 (28508/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:56   - Sleeping for 1 seconds
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=5c7e4c22-b2e9-482e-99ea-5dc6b87f48f4
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 4e56c529-4c07-4125-a319-30c79508f1e1
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:49:25,793 (28508/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (3): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:25,978 (28508/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=5c7e4c22-b2e9-482e-99ea-5dc6b87f48f4&request_guid=4e56c529-4c07-4125-a319-30c79508f1e1'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:49:25,978 (28508/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=5c7e4c22-b2e9-482e-99ea-5dc6b87f48f4&request_guid=4e56c529-4c07-4125-a319-30c79508f1e1
+2024-01-03 02:49:25,978 (28508/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (4): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:26,195 (28508/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.us-east-1.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=5c7e4c22-b2e9-482e-99ea-5dc6b87f48f4&request_guid=4e56c529-4c07-4125-a319-30c79508f1e1 (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:49:26,211 (28508/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=5c7e4c22-b2e9-482e-99ea-5dc6b87f48f4&request_guid=4e56c529-4c07-4125-a319-30c79508f1e1, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:49:26,211 (28508/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:49:26,211 (28508/MainThread) snowflake.connector.connection DEBUG     connection:1110 - Continuing authenticator specific timeout handling
+2024-01-03 02:49:26,211 (28508/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:49:26,211 (28508/MainThread) __main__ ERROR      eventloop:557  - Database connection failed: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting.
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=fb8e8d49-da91-4c6e-9faa-7e0392787915&request_guid=82f569e6-42d2-48d1-82ff-b8a2a4c4a346
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:49:26,226 (28508/MainThread) __main__ INFO      eventloop:577  - rollback
+2024-01-03 02:49:26,226 (28508/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:392  - rollback
+2024-01-03 02:49:26,226 (28508/MainThread) __main__ ERROR      eventloop:1255 - 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=fb8e8d49-da91-4c6e-9faa-7e0392787915&request_guid=82f569e6-42d2-48d1-82ff-b8a2a4c4a346
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 1151, in cli
+  File "eventloop.py", line 564, in connect
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:49:26,242 (28508/MainThread) __main__ DEBUG      eventloop:591  - closing sessions
+2024-01-03 02:49:26,242 (28508/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:373  - closing connections
+2024-01-03 02:49:26,242 (28508/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:340  - joining async exec
+2024-01-03 02:49:26,242 (28508/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:348  - waiting for async exec to finish...
+2024-01-03 02:49:26,242 (28508/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:365  - all async queries finished.
+2024-01-03 02:49:26,264 (28508/MainThread) snowflake.connector.connection INFO     connection:557  - closed
+2024-01-03 02:49:26,264 (28508/MainThread) snowflake.connector.connection DEBUG     connection:573  - Exception encountered in closing connection. ignoring...: 'SnowflakeConnection' object has no attribute '_telemetry'
+2024-01-03 02:49:40,428 (31928/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:49:40,428 (31928/MainThread) snowflake.cli.common.util_cli INFO       util_cli:741  - REQUESTS_CA_BUNDLE is already set to C:\Users\Z408284\AppData\Local\Temp\_MEI362122\certifi\cacert.pem
+2024-01-03 02:49:40,428 (31928/MainThread) __main__ DEBUG      eventloop:219  - is_terminal: True, is_interactive: True
+2024-01-03 02:49:40,428 (31928/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\1.2.23\snowsql.cnf
+2024-01-03 02:49:40,428 (31928/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2024-01-03 02:49:40,444 (31928/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2024-01-03 02:49:40,444 (31928/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2024-01-03 02:49:40,444 (31928/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql.cnf
+2024-01-03 02:49:40,444 (31928/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\config
+2024-01-03 02:49:40,444 (31928/MainThread) __main__ DEBUG      eventloop:362  - [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2024-01-03 02:49:40,444 (31928/MainThread) __main__ DEBUG      eventloop:368  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2024-01-03 02:49:40,445 (31928/MainThread) __main__ DEBUG      eventloop:417  - host=None, port: + None
+2024-01-03 02:49:40,445 (31928/MainThread) __main__ DEBUG      eventloop:456  - prompting user, password and account if still missing
+2024-01-03 02:49:51,374 (31928/MainThread) __main__ DEBUG      eventloop:511  - init sqlexecute
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:244  - Connection DB Params: database: None, warehouse: None, user: X851082, host: tjb53652.us-east-1.snowflakecomputing.com, port: 443, region: None, account: tjb53652.us-east-1, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.connection INFO     connection:270  - Snowflake Connector for Python Version: 2.7.11, Python Version: 3.8.2, Platform: Windows-10-10.0.19041-SP0
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.connection DEBUG     connection:512  - connect
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.connection DEBUG     connection:802  - __config
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.connection INFO     connection:926  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.connection INFO     connection:944  - Setting use_openssl_only mode to False
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.converter DEBUG      converter:145  - use_numpy: False
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.connection DEBUG     connection:705  - REST API object was created: tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=405619e1-62dd-4be5-8e9a-363c3aabf148
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 7b5dee36-e31b-4e3f-b72f-bfb985a3042f
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:49:51,374 (31928/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (1): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:51,675 (31928/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=405619e1-62dd-4be5-8e9a-363c3aabf148&request_guid=7b5dee36-e31b-4e3f-b72f-bfb985a3042f'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:49:51,690 (31928/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=405619e1-62dd-4be5-8e9a-363c3aabf148&request_guid=7b5dee36-e31b-4e3f-b72f-bfb985a3042f
+2024-01-03 02:49:51,690 (31928/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (2): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:51,891 (31928/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.us-east-1.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=405619e1-62dd-4be5-8e9a-363c3aabf148&request_guid=7b5dee36-e31b-4e3f-b72f-bfb985a3042f (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:49:51,907 (31928/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=405619e1-62dd-4be5-8e9a-363c3aabf148&request_guid=7b5dee36-e31b-4e3f-b72f-bfb985a3042f, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:49:51,914 (31928/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:49:51,914 (31928/MainThread) snowflake.connector.connection DEBUG     connection:1079 - Operational Error raised at authenticationfor authenticator: AuthByDefault
+2024-01-03 02:49:51,914 (31928/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:49:51,914 (31928/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:123  - Hit connection timeout, attempt number 0. Will retry in a bit...
+2024-01-03 02:49:51,914 (31928/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:56   - Sleeping for 1 seconds
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=dc39d89b-34de-4cbc-bf9e-9418e4a43c6f
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 21fb6325-cc24-41f6-81a0-a1bd85b96a9b
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:49:52,933 (31928/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (3): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:53,118 (31928/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=dc39d89b-34de-4cbc-bf9e-9418e4a43c6f&request_guid=21fb6325-cc24-41f6-81a0-a1bd85b96a9b'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:49:53,118 (31928/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=dc39d89b-34de-4cbc-bf9e-9418e4a43c6f&request_guid=21fb6325-cc24-41f6-81a0-a1bd85b96a9b
+2024-01-03 02:49:53,118 (31928/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (4): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:49:53,312 (31928/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.us-east-1.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=dc39d89b-34de-4cbc-bf9e-9418e4a43c6f&request_guid=21fb6325-cc24-41f6-81a0-a1bd85b96a9b (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:49:53,318 (31928/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=dc39d89b-34de-4cbc-bf9e-9418e4a43c6f&request_guid=21fb6325-cc24-41f6-81a0-a1bd85b96a9b, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:49:53,318 (31928/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:49:53,318 (31928/MainThread) snowflake.connector.connection DEBUG     connection:1110 - Continuing authenticator specific timeout handling
+2024-01-03 02:49:53,318 (31928/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:49:53,318 (31928/MainThread) __main__ ERROR      eventloop:557  - Database connection failed: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting.
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=405619e1-62dd-4be5-8e9a-363c3aabf148&request_guid=7b5dee36-e31b-4e3f-b72f-bfb985a3042f
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:49:53,318 (31928/MainThread) __main__ INFO      eventloop:577  - rollback
+2024-01-03 02:49:53,318 (31928/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:392  - rollback
+2024-01-03 02:49:53,318 (31928/MainThread) __main__ ERROR      eventloop:1255 - 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=405619e1-62dd-4be5-8e9a-363c3aabf148&request_guid=7b5dee36-e31b-4e3f-b72f-bfb985a3042f
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 1151, in cli
+  File "eventloop.py", line 564, in connect
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:49:53,334 (31928/MainThread) __main__ DEBUG      eventloop:591  - closing sessions
+2024-01-03 02:49:53,334 (31928/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:373  - closing connections
+2024-01-03 02:49:53,334 (31928/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:340  - joining async exec
+2024-01-03 02:49:53,334 (31928/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:348  - waiting for async exec to finish...
+2024-01-03 02:49:53,334 (31928/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:365  - all async queries finished.
+2024-01-03 02:49:53,365 (31928/MainThread) snowflake.connector.connection INFO     connection:557  - closed
+2024-01-03 02:49:53,365 (31928/MainThread) snowflake.connector.connection DEBUG     connection:573  - Exception encountered in closing connection. ignoring...: 'SnowflakeConnection' object has no attribute '_telemetry'
+2024-01-03 02:50:10,728 (37004/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:50:10,728 (37004/MainThread) snowflake.cli.common.util_cli INFO       util_cli:741  - REQUESTS_CA_BUNDLE is already set to C:\Users\Z408284\AppData\Local\Temp\_MEI97442\certifi\cacert.pem
+2024-01-03 02:50:10,728 (37004/MainThread) __main__ DEBUG      eventloop:219  - is_terminal: True, is_interactive: True
+2024-01-03 02:50:10,728 (37004/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\1.2.23\snowsql.cnf
+2024-01-03 02:50:10,728 (37004/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2024-01-03 02:50:10,728 (37004/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2024-01-03 02:50:10,728 (37004/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2024-01-03 02:50:10,728 (37004/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql.cnf
+2024-01-03 02:50:10,728 (37004/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\config
+2024-01-03 02:50:10,728 (37004/MainThread) __main__ DEBUG      eventloop:362  - [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2024-01-03 02:50:10,728 (37004/MainThread) __main__ DEBUG      eventloop:368  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2024-01-03 02:50:10,728 (37004/MainThread) __main__ DEBUG      eventloop:417  - host=None, port: + None
+2024-01-03 02:50:10,728 (37004/MainThread) __main__ DEBUG      eventloop:456  - prompting user, password and account if still missing
+2024-01-03 02:50:22,219 (37004/MainThread) __main__ DEBUG      eventloop:511  - init sqlexecute
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:244  - Connection DB Params: database: None, warehouse: None, user: X851082, host: tjb53652.snowflakecomputing.com, port: 443, region: None, account: tjb53652, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.connection INFO     connection:270  - Snowflake Connector for Python Version: 2.7.11, Python Version: 3.8.2, Platform: Windows-10-10.0.19041-SP0
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.connection DEBUG     connection:512  - connect
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.connection DEBUG     connection:802  - __config
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.connection INFO     connection:926  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.connection INFO     connection:944  - Setting use_openssl_only mode to False
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.converter DEBUG      converter:145  - use_numpy: False
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.connection DEBUG     connection:705  - REST API object was created: tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=6c1a2cd2-37fb-446c-b765-83260c284222
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 5fbea80f-03e0-4c5f-bb13-acf6b2b6ebdb
+2024-01-03 02:50:22,219 (37004/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:50:22,235 (37004/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (1): tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:22,551 (37004/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=6c1a2cd2-37fb-446c-b765-83260c284222&request_guid=5fbea80f-03e0-4c5f-bb13-acf6b2b6ebdb'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:50:22,551 (37004/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=6c1a2cd2-37fb-446c-b765-83260c284222&request_guid=5fbea80f-03e0-4c5f-bb13-acf6b2b6ebdb
+2024-01-03 02:50:22,551 (37004/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (2): tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:22,720 (37004/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=6c1a2cd2-37fb-446c-b765-83260c284222&request_guid=5fbea80f-03e0-4c5f-bb13-acf6b2b6ebdb (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:50:22,720 (37004/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.snowflakecomputing.com:443/session/v1/login-request?request_id=6c1a2cd2-37fb-446c-b765-83260c284222&request_guid=5fbea80f-03e0-4c5f-bb13-acf6b2b6ebdb, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:50:22,720 (37004/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:50:22,720 (37004/MainThread) snowflake.connector.connection DEBUG     connection:1079 - Operational Error raised at authenticationfor authenticator: AuthByDefault
+2024-01-03 02:50:22,720 (37004/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:50:22,720 (37004/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:123  - Hit connection timeout, attempt number 0. Will retry in a bit...
+2024-01-03 02:50:22,720 (37004/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:56   - Sleeping for 1 seconds
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=6714a4bb-7da7-41ea-99c0-0bcc07751f69
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: badd1627-2d78-4134-8cc7-3b152e68fe5f
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:50:23,723 (37004/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (3): tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:23,908 (37004/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=6714a4bb-7da7-41ea-99c0-0bcc07751f69&request_guid=badd1627-2d78-4134-8cc7-3b152e68fe5f'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:50:23,908 (37004/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=6714a4bb-7da7-41ea-99c0-0bcc07751f69&request_guid=badd1627-2d78-4134-8cc7-3b152e68fe5f
+2024-01-03 02:50:23,908 (37004/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (4): tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:24,108 (37004/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=6714a4bb-7da7-41ea-99c0-0bcc07751f69&request_guid=badd1627-2d78-4134-8cc7-3b152e68fe5f (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:50:24,123 (37004/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.snowflakecomputing.com:443/session/v1/login-request?request_id=6714a4bb-7da7-41ea-99c0-0bcc07751f69&request_guid=badd1627-2d78-4134-8cc7-3b152e68fe5f, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:50:24,123 (37004/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:50:24,123 (37004/MainThread) snowflake.connector.connection DEBUG     connection:1110 - Continuing authenticator specific timeout handling
+2024-01-03 02:50:24,123 (37004/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:50:24,123 (37004/MainThread) __main__ ERROR      eventloop:557  - Database connection failed: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting.
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.snowflakecomputing.com:443/session/v1/login-request?request_id=6c1a2cd2-37fb-446c-b765-83260c284222&request_guid=5fbea80f-03e0-4c5f-bb13-acf6b2b6ebdb
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:50:24,139 (37004/MainThread) __main__ INFO      eventloop:577  - rollback
+2024-01-03 02:50:24,139 (37004/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:392  - rollback
+2024-01-03 02:50:24,139 (37004/MainThread) __main__ ERROR      eventloop:1255 - 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.snowflakecomputing.com:443/session/v1/login-request?request_id=6c1a2cd2-37fb-446c-b765-83260c284222&request_guid=5fbea80f-03e0-4c5f-bb13-acf6b2b6ebdb
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 1151, in cli
+  File "eventloop.py", line 564, in connect
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:50:24,155 (37004/MainThread) __main__ DEBUG      eventloop:591  - closing sessions
+2024-01-03 02:50:24,155 (37004/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:373  - closing connections
+2024-01-03 02:50:24,155 (37004/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:340  - joining async exec
+2024-01-03 02:50:24,155 (37004/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:348  - waiting for async exec to finish...
+2024-01-03 02:50:24,155 (37004/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:365  - all async queries finished.
+2024-01-03 02:50:24,177 (37004/MainThread) snowflake.connector.connection INFO     connection:557  - closed
+2024-01-03 02:50:24,177 (37004/MainThread) snowflake.connector.connection DEBUG     connection:573  - Exception encountered in closing connection. ignoring...: 'SnowflakeConnection' object has no attribute '_telemetry'
+2024-01-03 02:50:45,740 (35736/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:50:45,740 (35736/MainThread) snowflake.cli.common.util_cli INFO       util_cli:741  - REQUESTS_CA_BUNDLE is already set to C:\Users\Z408284\AppData\Local\Temp\_MEI326802\certifi\cacert.pem
+2024-01-03 02:50:45,740 (35736/MainThread) __main__ DEBUG      eventloop:219  - is_terminal: True, is_interactive: True
+2024-01-03 02:50:45,740 (35736/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\1.2.23\snowsql.cnf
+2024-01-03 02:50:45,740 (35736/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2024-01-03 02:50:45,740 (35736/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2024-01-03 02:50:45,740 (35736/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2024-01-03 02:50:45,740 (35736/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql.cnf
+2024-01-03 02:50:45,740 (35736/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\config
+2024-01-03 02:50:45,740 (35736/MainThread) __main__ DEBUG      eventloop:362  - [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2024-01-03 02:50:45,740 (35736/MainThread) __main__ DEBUG      eventloop:368  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2024-01-03 02:50:45,740 (35736/MainThread) __main__ DEBUG      eventloop:417  - host=None, port: + None
+2024-01-03 02:50:45,740 (35736/MainThread) __main__ DEBUG      eventloop:456  - prompting user, password and account if still missing
+2024-01-03 02:50:49,165 (35736/MainThread) __main__ DEBUG      eventloop:511  - init sqlexecute
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:244  - Connection DB Params: database: None, warehouse: None, user: X851082, host: tjb53652.snowflakecomputing.com, port: 443, region: None, account: tjb53652, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.connection INFO     connection:270  - Snowflake Connector for Python Version: 2.7.11, Python Version: 3.8.2, Platform: Windows-10-10.0.19041-SP0
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.connection DEBUG     connection:512  - connect
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.connection DEBUG     connection:802  - __config
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.connection INFO     connection:926  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.connection INFO     connection:944  - Setting use_openssl_only mode to False
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.converter DEBUG      converter:145  - use_numpy: False
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.connection DEBUG     connection:705  - REST API object was created: tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=bb12b8e4-9ddc-4eec-b845-308cc2e82e1e
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 3d111fb1-26b8-4732-8d86-406d826223d9
+2024-01-03 02:50:49,165 (35736/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:50:49,181 (35736/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (1): tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:49,451 (35736/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=bb12b8e4-9ddc-4eec-b845-308cc2e82e1e&request_guid=3d111fb1-26b8-4732-8d86-406d826223d9'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:50:49,451 (35736/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=bb12b8e4-9ddc-4eec-b845-308cc2e82e1e&request_guid=3d111fb1-26b8-4732-8d86-406d826223d9
+2024-01-03 02:50:49,451 (35736/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (2): tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:49,698 (35736/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=bb12b8e4-9ddc-4eec-b845-308cc2e82e1e&request_guid=3d111fb1-26b8-4732-8d86-406d826223d9 (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:50:49,713 (35736/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.snowflakecomputing.com:443/session/v1/login-request?request_id=bb12b8e4-9ddc-4eec-b845-308cc2e82e1e&request_guid=3d111fb1-26b8-4732-8d86-406d826223d9, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:50:49,720 (35736/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:50:49,720 (35736/MainThread) snowflake.connector.connection DEBUG     connection:1079 - Operational Error raised at authenticationfor authenticator: AuthByDefault
+2024-01-03 02:50:49,720 (35736/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:50:49,720 (35736/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:123  - Hit connection timeout, attempt number 0. Will retry in a bit...
+2024-01-03 02:50:49,720 (35736/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:56   - Sleeping for 3 seconds
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=d44c0cc7-9579-4bd3-9b30-056b51c86f79
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 40f8bfd6-176e-4f36-a974-042db3d0e15a
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:50:52,741 (35736/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (3): tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:52,926 (35736/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=d44c0cc7-9579-4bd3-9b30-056b51c86f79&request_guid=40f8bfd6-176e-4f36-a974-042db3d0e15a'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:50:52,926 (35736/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=d44c0cc7-9579-4bd3-9b30-056b51c86f79&request_guid=40f8bfd6-176e-4f36-a974-042db3d0e15a
+2024-01-03 02:50:52,942 (35736/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (4): tjb53652.snowflakecomputing.com:443
+2024-01-03 02:50:53,127 (35736/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=d44c0cc7-9579-4bd3-9b30-056b51c86f79&request_guid=40f8bfd6-176e-4f36-a974-042db3d0e15a (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:50:53,143 (35736/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.snowflakecomputing.com:443/session/v1/login-request?request_id=d44c0cc7-9579-4bd3-9b30-056b51c86f79&request_guid=40f8bfd6-176e-4f36-a974-042db3d0e15a, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:50:53,143 (35736/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:50:53,143 (35736/MainThread) snowflake.connector.connection DEBUG     connection:1110 - Continuing authenticator specific timeout handling
+2024-01-03 02:50:53,143 (35736/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:50:53,158 (35736/MainThread) __main__ ERROR      eventloop:557  - Database connection failed: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting.
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.snowflakecomputing.com:443/session/v1/login-request?request_id=bb12b8e4-9ddc-4eec-b845-308cc2e82e1e&request_guid=3d111fb1-26b8-4732-8d86-406d826223d9
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:50:53,158 (35736/MainThread) __main__ INFO      eventloop:577  - rollback
+2024-01-03 02:50:53,158 (35736/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:392  - rollback
+2024-01-03 02:50:53,158 (35736/MainThread) __main__ ERROR      eventloop:1255 - 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.snowflakecomputing.com:443/session/v1/login-request?request_id=bb12b8e4-9ddc-4eec-b845-308cc2e82e1e&request_guid=3d111fb1-26b8-4732-8d86-406d826223d9
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 1151, in cli
+  File "eventloop.py", line 564, in connect
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:50:53,174 (35736/MainThread) __main__ DEBUG      eventloop:591  - closing sessions
+2024-01-03 02:50:53,174 (35736/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:373  - closing connections
+2024-01-03 02:50:53,174 (35736/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:340  - joining async exec
+2024-01-03 02:50:53,174 (35736/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:348  - waiting for async exec to finish...
+2024-01-03 02:50:53,174 (35736/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:365  - all async queries finished.
+2024-01-03 02:50:53,190 (35736/MainThread) snowflake.connector.connection INFO     connection:557  - closed
+2024-01-03 02:50:53,190 (35736/MainThread) snowflake.connector.connection DEBUG     connection:573  - Exception encountered in closing connection. ignoring...: 'SnowflakeConnection' object has no attribute '_telemetry'
+2024-01-03 02:53:37,680 (36256/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:53:37,680 (36256/MainThread) snowflake.cli.common.util_cli INFO       util_cli:741  - REQUESTS_CA_BUNDLE is already set to C:\Users\Z408284\AppData\Local\Temp\_MEI100442\certifi\cacert.pem
+2024-01-03 02:53:37,680 (36256/MainThread) __main__ DEBUG      eventloop:219  - is_terminal: True, is_interactive: True
+2024-01-03 02:53:37,680 (36256/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\1.2.23\snowsql.cnf
+2024-01-03 02:53:37,680 (36256/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2024-01-03 02:53:37,680 (36256/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2024-01-03 02:53:37,680 (36256/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2024-01-03 02:53:37,680 (36256/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql.cnf
+2024-01-03 02:53:37,680 (36256/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\config
+2024-01-03 02:53:37,680 (36256/MainThread) __main__ DEBUG      eventloop:362  - [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2024-01-03 02:53:37,680 (36256/MainThread) __main__ DEBUG      eventloop:368  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2024-01-03 02:53:37,680 (36256/MainThread) __main__ DEBUG      eventloop:417  - host=None, port: + None
+2024-01-03 02:53:37,680 (36256/MainThread) __main__ DEBUG      eventloop:456  - prompting user, password and account if still missing
+2024-01-03 02:53:40,774 (36256/MainThread) __main__ DEBUG      eventloop:511  - init sqlexecute
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:244  - Connection DB Params: database: None, warehouse: None, user: X851082, host: tjb53652.us-east-1.aws.snowflakecomputing.com, port: 443, region: None, account: tjb53652.us-east-1.aws, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.connection INFO     connection:270  - Snowflake Connector for Python Version: 2.7.11, Python Version: 3.8.2, Platform: Windows-10-10.0.19041-SP0
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.connection DEBUG     connection:512  - connect
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.connection DEBUG     connection:802  - __config
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.connection INFO     connection:926  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.connection INFO     connection:944  - Setting use_openssl_only mode to False
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.converter DEBUG      converter:145  - use_numpy: False
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.connection DEBUG     connection:705  - REST API object was created: tjb53652.us-east-1.aws.snowflakecomputing.com:443
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=b38f2a22-bcfa-46e1-8643-e1e36f3d1cd0
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:53:40,774 (36256/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:53:40,790 (36256/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:53:40,790 (36256/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:53:40,790 (36256/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.us-east-1.aws.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:53:40,790 (36256/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:53:40,790 (36256/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: e60b778c-56ca-4e4f-9b9c-c2f10439f629
+2024-01-03 02:53:40,790 (36256/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:53:40,790 (36256/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (1): tjb53652.us-east-1.aws.snowflakecomputing.com:443
+2024-01-03 02:53:41,153 (36256/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=b38f2a22-bcfa-46e1-8643-e1e36f3d1cd0&request_guid=e60b778c-56ca-4e4f-9b9c-c2f10439f629'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:53:41,153 (36256/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=b38f2a22-bcfa-46e1-8643-e1e36f3d1cd0&request_guid=e60b778c-56ca-4e4f-9b9c-c2f10439f629
+2024-01-03 02:53:41,153 (36256/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (2): tjb53652.us-east-1.aws.snowflakecomputing.com:443
+2024-01-03 02:53:41,377 (36256/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.us-east-1.aws.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=b38f2a22-bcfa-46e1-8643-e1e36f3d1cd0&request_guid=e60b778c-56ca-4e4f-9b9c-c2f10439f629 (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:53:41,392 (36256/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.aws.snowflakecomputing.com:443/session/v1/login-request?request_id=b38f2a22-bcfa-46e1-8643-e1e36f3d1cd0&request_guid=e60b778c-56ca-4e4f-9b9c-c2f10439f629, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:53:41,392 (36256/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.us-east-1.aws.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:53:41,392 (36256/MainThread) snowflake.connector.connection DEBUG     connection:1079 - Operational Error raised at authenticationfor authenticator: AuthByDefault
+2024-01-03 02:53:41,392 (36256/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:53:41,392 (36256/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:123  - Hit connection timeout, attempt number 0. Will retry in a bit...
+2024-01-03 02:53:41,392 (36256/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:56   - Sleeping for 1 seconds
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=7b34967b-bea0-44f3-af97-f9d1ef073fb4
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.us-east-1.aws.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: db477141-bfae-4f91-b383-cdd0ea39383a
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:53:42,393 (36256/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (3): tjb53652.us-east-1.aws.snowflakecomputing.com:443
+2024-01-03 02:53:42,593 (36256/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=7b34967b-bea0-44f3-af97-f9d1ef073fb4&request_guid=db477141-bfae-4f91-b383-cdd0ea39383a'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:53:42,593 (36256/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=7b34967b-bea0-44f3-af97-f9d1ef073fb4&request_guid=db477141-bfae-4f91-b383-cdd0ea39383a
+2024-01-03 02:53:42,593 (36256/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (4): tjb53652.us-east-1.aws.snowflakecomputing.com:443
+2024-01-03 02:53:42,809 (36256/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.us-east-1.aws.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=7b34967b-bea0-44f3-af97-f9d1ef073fb4&request_guid=db477141-bfae-4f91-b383-cdd0ea39383a (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:53:42,824 (36256/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.aws.snowflakecomputing.com:443/session/v1/login-request?request_id=7b34967b-bea0-44f3-af97-f9d1ef073fb4&request_guid=db477141-bfae-4f91-b383-cdd0ea39383a, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:53:42,824 (36256/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.us-east-1.aws.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:53:42,824 (36256/MainThread) snowflake.connector.connection DEBUG     connection:1110 - Continuing authenticator specific timeout handling
+2024-01-03 02:53:42,840 (36256/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:53:42,840 (36256/MainThread) __main__ ERROR      eventloop:557  - Database connection failed: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting.
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.aws.snowflakecomputing.com:443/session/v1/login-request?request_id=b38f2a22-bcfa-46e1-8643-e1e36f3d1cd0&request_guid=e60b778c-56ca-4e4f-9b9c-c2f10439f629
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:53:42,840 (36256/MainThread) __main__ INFO      eventloop:577  - rollback
+2024-01-03 02:53:42,840 (36256/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:392  - rollback
+2024-01-03 02:53:42,840 (36256/MainThread) __main__ ERROR      eventloop:1255 - 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.aws.snowflakecomputing.com:443/session/v1/login-request?request_id=b38f2a22-bcfa-46e1-8643-e1e36f3d1cd0&request_guid=e60b778c-56ca-4e4f-9b9c-c2f10439f629
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 1151, in cli
+  File "eventloop.py", line 564, in connect
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:53:42,856 (36256/MainThread) __main__ DEBUG      eventloop:591  - closing sessions
+2024-01-03 02:53:42,862 (36256/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:373  - closing connections
+2024-01-03 02:53:42,862 (36256/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:340  - joining async exec
+2024-01-03 02:53:42,862 (36256/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:348  - waiting for async exec to finish...
+2024-01-03 02:53:42,862 (36256/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:365  - all async queries finished.
+2024-01-03 02:53:42,878 (36256/MainThread) snowflake.connector.connection INFO     connection:557  - closed
+2024-01-03 02:53:42,878 (36256/MainThread) snowflake.connector.connection DEBUG     connection:573  - Exception encountered in closing connection. ignoring...: 'SnowflakeConnection' object has no attribute '_telemetry'
+2024-01-03 02:55:26,505 (37084/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:706  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2024-01-03 02:55:26,505 (37084/MainThread) snowflake.cli.common.util_cli INFO       util_cli:741  - REQUESTS_CA_BUNDLE is already set to C:\Users\Z408284\AppData\Local\Temp\_MEI290082\certifi\cacert.pem
+2024-01-03 02:55:26,505 (37084/MainThread) __main__ DEBUG      eventloop:219  - is_terminal: True, is_interactive: True
+2024-01-03 02:55:26,505 (37084/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\1.2.23\snowsql.cnf
+2024-01-03 02:55:26,521 (37084/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowsql.cnf
+2024-01-03 02:55:26,521 (37084/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /etc/snowflake/snowsql.cnf
+2024-01-03 02:55:26,521 (37084/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: /usr/local/etc/snowsql.cnf
+2024-01-03 02:55:26,521 (37084/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql.cnf
+2024-01-03 02:55:26,521 (37084/MainThread) snowflake.cli.common.config DEBUG         config:87   - Reading cnf: C:\Users\Z408284\.snowsql\config
+2024-01-03 02:55:26,521 (37084/MainThread) __main__ DEBUG      eventloop:362  - [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2024-01-03 02:55:26,522 (37084/MainThread) __main__ DEBUG      eventloop:368  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2024-01-03 02:55:26,522 (37084/MainThread) __main__ DEBUG      eventloop:417  - host=None, port: + None
+2024-01-03 02:55:26,522 (37084/MainThread) __main__ DEBUG      eventloop:456  - prompting user, password and account if still missing
+2024-01-03 02:55:34,701 (37084/MainThread) __main__ DEBUG      eventloop:511  - init sqlexecute
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:244  - Connection DB Params: database: None, warehouse: None, user: X851082, host: tjb53652.us-east-1.snowflakecomputing.com, port: 443, region: None, account: tjb53652.us-east-1, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: SNOWFLAKE, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.connection INFO     connection:270  - Snowflake Connector for Python Version: 2.7.11, Python Version: 3.8.2, Platform: Windows-10-10.0.19041-SP0
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.connection DEBUG     connection:512  - connect
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.connection DEBUG     connection:802  - __config
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.connection INFO     connection:926  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.connection INFO     connection:944  - Setting use_openssl_only mode to False
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.converter DEBUG      converter:145  - use_numpy: False
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.connection DEBUG     connection:705  - REST API object was created: tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=8f39c542-739b-4483-8fff-5946e7a1cb22
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:55:34,701 (37084/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:55:34,717 (37084/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:55:34,717 (37084/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:351  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:55:34,717 (37084/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:55:34,717 (37084/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:55:34,717 (37084/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 8fcd402e-49a4-4983-965d-a87b98a7db24
+2024-01-03 02:55:34,717 (37084/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:55:34,717 (37084/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (1): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:55:35,089 (37084/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=8f39c542-739b-4483-8fff-5946e7a1cb22&request_guid=8fcd402e-49a4-4983-965d-a87b98a7db24'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:55:35,089 (37084/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=8f39c542-739b-4483-8fff-5946e7a1cb22&request_guid=8fcd402e-49a4-4983-965d-a87b98a7db24
+2024-01-03 02:55:35,089 (37084/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (2): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:55:35,278 (37084/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.us-east-1.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=8f39c542-739b-4483-8fff-5946e7a1cb22&request_guid=8fcd402e-49a4-4983-965d-a87b98a7db24 (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:55:35,283 (37084/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=8f39c542-739b-4483-8fff-5946e7a1cb22&request_guid=8fcd402e-49a4-4983-965d-a87b98a7db24, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:55:35,289 (37084/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:55:35,289 (37084/MainThread) snowflake.connector.connection DEBUG     connection:1079 - Operational Error raised at authenticationfor authenticator: AuthByDefault
+2024-01-03 02:55:35,290 (37084/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:55:35,290 (37084/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:123  - Hit connection timeout, attempt number 0. Will retry in a bit...
+2024-01-03 02:55:35,290 (37084/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:56   - Sleeping for 3 seconds
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.auth DEBUG           auth:170  - authenticate
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.auth DEBUG           auth:200  - assertion content: *********
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.auth DEBUG           auth:203  - account=tjb53652, user=X851082, database=None, schema=None, warehouse=None, role=None, request_id=c90c9141-684a-4ef6-8418-9039ea608933
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.auth DEBUG           auth:236  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.23', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'tjb53652', 'LOGIN_NAME': 'X851082', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.19041-SP0', 'PYTHON_VERSION': '3.8.2', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE': False, 'CLIENT_PREFETCH_THREADS': 4}}
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.auth DEBUG           auth:254  - Timeout set to 120
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.network DEBUG        network:1147 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 1/1 active sessions
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.network DEBUG        network:827  - remaining request timeout: 120, retry cnt: 1
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.network DEBUG        network:808  - Request guid: 54e1ec06-6505-4674-8425-98b225602fb0
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.network DEBUG        network:1006 - socket timeout: 60
+2024-01-03 02:55:38,292 (37084/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (3): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:55:38,478 (37084/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:594  - Incremented Retry for (url='/session/v1/login-request?request_id=c90c9141-684a-4ef6-8418-9039ea608933&request_guid=54e1ec06-6505-4674-8425-98b225602fb0'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2024-01-03 02:55:38,478 (37084/MainThread) snowflake.connector.vendored.urllib3.connectionpool WARNING connectionpool:812  - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])"))': /session/v1/login-request?request_id=c90c9141-684a-4ef6-8418-9039ea608933&request_guid=54e1ec06-6505-4674-8425-98b225602fb0
+2024-01-03 02:55:38,478 (37084/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:1003 - Starting new HTTPS connection (4): tjb53652.us-east-1.snowflakecomputing.com:443
+2024-01-03 02:55:38,694 (37084/MainThread) snowflake.connector.network DEBUG        network:1064 - Hit non-retryable SSL error, HTTPSConnectionPool(host='tjb53652.us-east-1.snowflakecomputing.com', port=443): Max retries exceeded with url: /session/v1/login-request?request_id=c90c9141-684a-4ef6-8418-9039ea608933&request_guid=54e1ec06-6505-4674-8425-98b225602fb0 (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
+2024-01-03 02:55:38,694 (37084/MainThread) snowflake.connector.network ERROR        network:972  - Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=c90c9141-684a-4ef6-8418-9039ea608933&request_guid=54e1ec06-6505-4674-8425-98b225602fb0, headers:{'Content-Type': 'application/json', 'accept': 'application/snowflake', 'User-Agent': 'PythonConnector/2.7.11 (Windows-10-10.0.19041-SP0) CPython/3.8.2', 'Content-Encoding': 'gzip'}, data: {"data": {"CLIENT_APP_ID": "SnowSQL", "CLIENT_APP_VERSION": "1.2.23", "SVN_REVISION": null, "ACCOUNT_NAME": "tjb53652", "LOGIN_NAME": "X851082", "CLIENT_ENVIRONMENT": {"APPLICATION": "SnowSQL", "OS": "Windows", "OS_VERSION": "Windows-10-10.0.19041-SP0", "PYTHON_VERSION": "3.8.2", "PYTHON_RUNTIME": "CPython", "PYTHON_COMPILER": "MSC v.1916 64 bit (AMD64)", "OCSP_MODE": "FAIL_OPEN", "TRACING": 10, "LOGIN_TIMEOUT": 120, "NETWORK_TIMEOUT": null}, "PASSWORD": "**** "SESSION_PARAMETERS": {"ABORT_DETACHED_QUERY": false, "AUTOCOMMIT": true, "CLIENT_SESSION_KEEP_ALIVE": false, "CLIENT_PREFETCH_THREADS": 4}}}
+2024-01-03 02:55:38,694 (37084/MainThread) snowflake.connector.network DEBUG        network:1152 - Session status for SessionPool 'tjb53652.us-east-1.snowflakecomputing.com', SessionPool 0/1 active sessions
+2024-01-03 02:55:38,709 (37084/MainThread) snowflake.connector.connection DEBUG     connection:1110 - Continuing authenticator specific timeout handling
+2024-01-03 02:55:38,709 (37084/MainThread) snowflake.connector.auth_by_plugin DEBUG auth_by_plugin:114  - Default timeout handler invoked for authenticator
+2024-01-03 02:55:38,709 (37084/MainThread) __main__ ERROR      eventloop:557  - Database connection failed: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting.
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=8f39c542-739b-4483-8fff-5946e7a1cb22&request_guid=8fcd402e-49a4-4983-965d-a87b98a7db24
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:55:38,709 (37084/MainThread) __main__ INFO      eventloop:577  - rollback
+2024-01-03 02:55:38,709 (37084/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:392  - rollback
+2024-01-03 02:55:38,709 (37084/MainThread) __main__ ERROR      eventloop:1255 - 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+Traceback (most recent call last):
+  File "snowflake\connector\connection.py", line 1064, in __authenticate
+  File "snowflake\connector\auth.py", line 257, in authenticate
+  File "snowflake\connector\network.py", line 704, in _post_request
+  File "snowflake\connector\network.py", line 794, in fetch
+  File "snowflake\connector\network.py", line 917, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 848, in _request_exec_wrapper
+  File "snowflake\connector\network.py", line 977, in _handle_unknown_error
+  File "snowflake\connector\errors.py", line 276, in errorhandler_wrapper
+  File "snowflake\connector\errors.py", line 334, in hand_to_other_handler
+  File "snowflake\connector\errors.py", line 210, in default_errorhandler
+snowflake.connector.errors.OperationalError: 250003: 250003: Failed to get the response. Hanging? method: post, url: https://tjb53652.us-east-1.snowflakecomputing.com:443/session/v1/login-request?request_id=8f39c542-739b-4483-8fff-5946e7a1cb22&request_guid=8fcd402e-49a4-4983-965d-a87b98a7db24
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "eventloop.py", line 1151, in cli
+  File "eventloop.py", line 564, in connect
+  File "eventloop.py", line 521, in connect
+  File "snowflake\cli\sqlexecute.py", line 280, in push_connection
+  File "snowflake\connector\__init__.py", line 51, in Connect
+  File "snowflake\connector\connection.py", line 292, in __init__
+  File "snowflake\connector\connection.py", line 542, in connect
+  File "snowflake\connector\connection.py", line 781, in __open_connection
+  File "snowflake\connector\connection.py", line 1044, in _authenticate
+  File "snowflake\connector\connection.py", line 1109, in __authenticate
+  File "snowflake\connector\connection.py", line 1086, in __authenticate
+  File "snowflake\connector\auth_by_plugin.py", line 117, in handle_timeout
+snowflake.connector.errors.OperationalError: 250001: 250001: Could not connect to Snowflake backend after 0 attempt(s).Aborting
+2024-01-03 02:55:38,725 (37084/MainThread) __main__ DEBUG      eventloop:591  - closing sessions
+2024-01-03 02:55:38,725 (37084/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:373  - closing connections
+2024-01-03 02:55:38,725 (37084/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:340  - joining async exec
+2024-01-03 02:55:38,725 (37084/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:348  - waiting for async exec to finish...
+2024-01-03 02:55:38,725 (37084/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:365  - all async queries finished.
+2024-01-03 02:55:38,747 (37084/MainThread) snowflake.connector.connection INFO     connection:557  - closed
+2024-01-03 02:55:38,747 (37084/MainThread) snowflake.connector.connection DEBUG     connection:573  - Exception encountered in closing connection. ignoring...: 'SnowflakeConnection' object has no attribute '_telemetry'

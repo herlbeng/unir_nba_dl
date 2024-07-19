@@ -1,0 +1,5 @@
+Configuración de la cuenta
+ID de cuenta
+954519111599
+Nombre de la cuenta
+assumed-role/AWSReservedSSO_SysOps_baa48c78f44ab9d9/Z408284@santander.com.mx

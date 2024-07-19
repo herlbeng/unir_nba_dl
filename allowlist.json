@@ -1,0 +1,57 @@
+[
+  {
+    "host": "tjb53652.us-east-1.privatelink.snowflakecomputing.com",
+    "port": 443,
+    "type": "SNOWFLAKE_DEPLOYMENT"
+  },
+  {
+    "host": "mob06251-sanmxdev.privatelink.snowflakecomputing.com",
+    "port": 443,
+    "type": "SNOWFLAKE_DEPLOYMENT_REGIONLESS"
+  },
+  {
+    "host": "sfc-va3-ds1-32-customer-stage.s3.amazonaws.com",
+    "port": 443,
+    "type": "STAGE"
+  },
+  {
+    "host": "sfc-va3-ds1-32-customer-stage.s3.us-east-1.amazonaws.com",
+    "port": 443,
+    "type": "STAGE"
+  },
+  {
+    "host": "sfc-repo.snowflakecomputing.com",
+    "port": 443,
+    "type": "SNOWSQL_REPO"
+  },
+  {
+    "host": "client-telemetry.snowflakecomputing.com",
+    "port": 443,
+    "type": "OUT_OF_BAND_TELEMETRY"
+  },
+  {
+    "host": "ocsp.tjb53652.us-east-1.privatelink.snowflakecomputing.com",
+    "port": 80,
+    "type": "OCSP_CACHE"
+  },
+  {
+    "host": "ocsp.mob06251-sanmxdev.privatelink.snowflakecomputing.com",
+    "port": 80,
+    "type": "OCSP_CACHE_REGIONLESS"
+  },
+  {
+    "host": "api-9f26eab8.duosecurity.com",
+    "port": 443,
+    "type": "DUO_SECURITY"
+  },
+  {
+    "host": "app.us-east-1.privatelink.snowflakecomputing.com",
+    "port": 443,
+    "type": "SNOWSIGHT_DEPLOYMENT"
+  },
+  {
+    "host": "app-mob06251-sanmxdev.privatelink.snowflakecomputing.com",
+    "port": 443,
+    "type": "SNOWSIGHT_DEPLOYMENT_REGIONLESS"
+  }
+]

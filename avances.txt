@@ -1,0 +1,7 @@
+Frentes abiertos:
+
+1) Ulises CI/CD
+2) Conexión Snowflake
+3) DT cambios 
+4) Fase de Pruebas
+5) Revisión de Excepciones

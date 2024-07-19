@@ -1,0 +1,93 @@
+!connect jdbc:snowflake://tjb53652.us-east-1.privatelink.snowflakecomputing.com:443/?user=X851082&role=ROLE_ITDATA_DEVELOPMENT&warehouse=VWH_ITDATA_X-SMALL&db=DB_BUSINESS&schema=DM_ITDATA&password=clima90A&insecureMode=True
+!connect jdbc:snowflake://tjb53652.us-east-1.privatelink.snowflakecomputing.com:443/?user=X851082&role=ROLE_ITDATA_DEVELOPMENT&warehouse=VWH_ITDATA_X-SMALL&db=DB_BUSINESS&schema=DM_ITDATA&password=Paso0505&insecureMode=True
+
+tjb53652.us-east-1.privatelink.snowflakecomputing.com:443
+role=ROLE_ITDATA_DEVELOPMENT
+warehouse=VWH_ITDATA_X-SMALL
+db=DB_BUSINESS
+schema=DM_ITDATA
+insecureMode=True
+X851082
+Paso0505
+MOB06251.us-east-1.privatelink.snowflakecomputing.com
+
+i-0c2704f2a762c9169
+[root@ip-107-106-152-119 ~]# ls -la
+
+https://tjb53652.us-east-1.snowflakecomputing.com/oauth/authorize?
+response_type=code
+client_id=3kwdvnjpUzxU6sqlkOoknyZ30jLvtA%3D%3D
+scope=refresh_token
+state=%7B%22csrf%22%3A%2278c4bbaf%22%2C%22url%22%3A%22https%3A%2F%2Ftjb53652.us-east-1.snowflakecomputing.com%22%2C%22windowId%22%3A%22db048b41-16fb-4206-8853-a1cff0c84d0c%22%2C%22browserUrl%22%3A%22https%3A%2F%2Fapp.snowflake.com%2F%22%2C%22originator%22%3A%22started-by-cb100-2024-01-03T01%3A24%3A47.625217221Z%22%2C%22oauthNonce%22%3A%22jTuH4BwD5CpTPz2S%22%7D
+redirect_uri=https%3A%2F%2Fapps-api.c1.us-east-1.aws.app.snowflake.com%2Fcomplete-oauth%2Fsnowflake
+code_challenge=sYjsDBVuqbLLq-U086Uwg4AabLnVaxwvkF8uxIWSe3k
+code_challenge_method=S256
+
+
+
+Cisco Secure Client 5.0.00850  
+(Tue Jan  2 18:50:02 2024)
+
+Secure Web Gateway
+	Umbrella Proxy:	swg-url-proxy-https.sigproxy.qq.opendns.com
+
+snowsql -u X851082 -r ROLE_ITDATA_DEVELOPMENT -w VWH_ITDATA_X-SMALL -d DB_BUSINESS -s DM_ITDATA
+Paso0505
+
+MOB06251.SANMXDEV
+
+
+terraform-state-mlops-sant.vpce-0c7b828951d632a33-zgdjgp0q.s3.us-east-1.vpce.amazonaws.com
+
+[root@ip-107-106-153-170 ~]# dig terraform-state-mlops-sant.vpce-0c7b828951d632a33-zgdjgp0q.s3.us-east-1.vpce.amazonaws.com
+
+; <<>> DiG 9.11.4-P2-RedHat-9.11.4-26.P2.amzn2.13.5 <<>> terraform-state-mlops-sant.vpce-0c7b828951d632a33-zgdjgp0q.s3.us-east-1.vpce.amazonaws.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 49473
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;terraform-state-mlops-sant.vpce-0c7b828951d632a33-zgdjgp0q.s3.us-east-1.vpce.amazonaws.com. IN A
+
+;; ANSWER SECTION:
+terraform-state-mlops-sant.vpce-0c7b828951d632a33-zgdjgp0q.s3.us-east-1.vpce.amazonaws.com. 60 IN A 107.106.152.125
+terraform-state-mlops-sant.vpce-0c7b828951d632a33-zgdjgp0q.s3.us-east-1.vpce.amazonaws.com. 60 IN A 107.106.152.134
+terraform-state-mlops-sant.vpce-0c7b828951d632a33-zgdjgp0q.s3.us-east-1.vpce.amazonaws.com. 60 IN A 107.106.153.157
+
+;; Query time: 1 msec
+;; SERVER: 10.112.0.2#53(10.112.0.2)
+;; WHEN: Thu Jan 25 01:44:02 UTC 2024
+;; MSG SIZE  rcvd: 167
+
+[root@ip-107-106-153-170 ~]# 
+
+
+https://repo1.maven.org/maven2/net/snowflake/snowflake-jdbc
+
+net.snowflake.client.jdbc.SnowflakeDriver
+
+docs.snowflake.com/en/user-guide/admin-security-privatelink
+docs.aws.amazon.com/es_es/sagemaker/latest/dg/data-wrangler-import.html
+
+arn:aws:iam::954519111599:role/t2prj0348770-data-science-exec-role
+
+com.amazonaws.vpce.us-east-1.vpce-svc-0ddfafc93f4619001
+
+
+
+nslookup tjb53652.us-east-1.privatelink.snowflakecomputing.com
+
+curl -v https://tjb53652.us-east-1.privatelink.snowflakecomputing.com
+curl -v https://mob06251-sanmxdev.privatelink.snowflakecomputing.com
+curl -v https://sfc-va3-ds1-32-customer-stage.s3.amazonaws.com
+curl -v https://sfc-va3-ds1-32-customer-stage.s3.us-east-1.amazonaws.com
+curl -v https://sfc-repo.snowflakecomputing.com
+curl -v https://client-telemetry.snowflakecomputing.com
+curl -v https://ocsp.tjb53652.us-east-1.privatelink.snowflakecomputing.com
+curl -v http://ocsp.mob06251-sanmxdev.privatelink.snowflakecomputing.com
+curl -v https://api-9f26eab8.duosecurity.com
+curl -v https://app.us-east-1.privatelink.snowflakecomputing.com
+curl -v https://app-mob06251-sanmxdev.privatelink.snowflakecomputing.com
